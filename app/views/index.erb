@@ -1,0 +1,55 @@
+<div id="title">
+<h1>Lets Make a Sign</h1>
+</div>
+<div class="container">
+
+<form action="/formatted" Method="GET">
+<h4>Store Hours for : <input type="store" name="store" placeholder="  Your Store Name"></h4>
+  <div id='input'>
+   Day:  <input type="day1" name="day1" placeholder="Day 1">
+   Time: <input type="time1" name="time1" placeholder="Time for Day 1"><br><br>
+ </div>
+ <div id='input'>
+   Day:  <input type="day2" name="day2" placeholder="Day 2">
+   Time: <input type="time2" name="time2" placeholder="Time for Day 2"><br><br>
+ </div>
+ <div id='input'>
+   Day:  <input type="day3" name="day3" placeholder="Day 3">
+   Time: <input type="time3" name="time3" placeholder="Time for Day 3"><br><br>
+ </div>
+ <div id='input'>
+   Day:  <input type="day4" name="day4" placeholder="Day 4">
+   Time: <input type="time4" name="time4" placeholder="Time for Day 4"><br><br>
+ </div>
+ <div id='input'>
+   Day:  <input type="day5" name="day5" placeholder="Day 5">
+   Time: <input type="time5" name="time5" placeholder="Time for Day 5"><br><br>
+ </div>
+ <div id='input'>
+   Day:  <input type="day6" name="day6" placeholder="Day 6">
+   Time: <input type="time6" name="time6" placeholder="Time for Day 6"><br><br>
+ </div>
+ <div id='input'>
+   Day:  <input type="day7" name="day7" placeholder="Day 7">
+   Time: <input type="time7" name="time7" placeholder="Time for Day 7"><br><br>
+ </div>
+ <div id='font'>
+  <span>Choose Font:</span><br>
+  <div id='raleway'>
+  <input type="radio" name="font" value="Raleway">Raleway
+  </div>
+  <div id='lobster'>
+  <input type="radio" name="font" value="Lobster">Lobster
+  </div>
+  <div id='shadow'>
+  <input type="radio" name="font" value="Shadows Into Light">Shadows Into Light
+  </div>
+  <div id='sans'>
+  <input type="radio" name="font" value="Open Sans Condensed">Open Sans Condensed
+  </div><br>
+</div>
+   <input id="button" type="submit" value="Make Sign">
+ </form>
+
+</div>
+<footer> <h3><%=@time.to_formatted_s(:long_ordinal)%> or <%= Time.now.strftime("%l:%M")%></h3></footer>

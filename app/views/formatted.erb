@@ -1,0 +1,80 @@
+<div id='sale'>
+  <img src="/sale-sign.png" alt="salesign" width="400" height="200">
+</div>
+
+<% if @font == "Raleway" %>
+  <div class="formatted" style="font-family: 'Raleway', sans-serif;" >
+    <% unless @storename.empty? %>
+      <h1>Always Save More At <%=@storename %> !</h1>
+    <% end %>
+    <h3>Store Hours:</h3>
+    <ul>
+    <% @days.each do |day| %>
+      <li><%= day %></li>
+    <% end %>
+    </ul>
+  </div>
+<% elsif @font == "Shadows Into Light" %>
+  <div class="formatted" style="font-family: 'Shadows Into Light', cursive;" >
+      <% unless @storename.empty? %>
+        <h1>Always Save More At <%=@storename %> !</h1>
+      <% end %>
+      <h3>Store Hours:</h3>
+    <ul>
+    <% @days.each do |day| %>
+      <li><%= day %></li>
+    <% end %>
+    </ul>
+  </div>
+<% elsif @font == "Open Sans Condensed" %>
+  <div class="formatted" style="font-family: 'Open Sans Condensed', sans-serif;" >
+    <% unless @storename.empty? %>
+      <h1>Always Save More At <%=@storename %> !</h1>
+    <% end %>
+      <h3>Store Hours:</h3>
+    <ul>
+    <% @days.each do |day| %>
+      <li><%= day %></li>
+    <% end %>
+    </ul>
+
+  </div>
+<% else @font == "Lobster" || @font == "" %>
+  <div class="formatted" style="font-family: 'Lobster', cursive;" >
+    <% unless @storename.empty? %>
+      <h1>Always Save More At <%=@storename %> !</h1>
+    <% end %>
+     <h3>Store Hours:</h3>
+    <ul>
+    <% @days.each do |day| %>
+      <li><%= day %></li>
+    <% end %>
+    </ul>
+
+  </div>
+<% end %>
+
+<div id='open'>
+  <img border="0" src="/OPEN5.png" alt="opensign" width="200" height="200">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id='print'>
+<button onclick="myFunction()">Print</button>
+<script>
+function myFunction()
+{
+window.print();
+}
+</script>
+</div>

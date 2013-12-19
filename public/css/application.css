@@ -1,0 +1,103 @@
+.formatted{
+  margin: 20px auto;
+  margin-top: 0;
+  width: 700px;
+  padding: 20px 20px 20px 20px;
+  background-color: white;
+  border-radius:25px;
+  text-align: center;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+
+body{
+  background-color: #FAEBD7;
+  font-family: 'Shadows Into Light', cursive;
+
+}
+.container {
+  margin: 20px auto;
+  width: 550px;
+  padding: 20px 20px 20px 20px;
+  background-color: white;
+  border-radius:25px;
+}
+
+#lobster{
+  font-family: 'Lobster', cursive;
+}
+
+li{
+   list-style-type: none;
+   text-align: center;
+   font-size: 300%;
+   border-bottom:1px solid black;
+}
+
+#open{
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+
+}
+
+#sale{
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  width: 700px;
+  margin: 20px auto;
+  margin-bottom: 0;
+  background-color: white;
+  border-radius:25px;
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}
+
+#print{
+  position: absolute;
+  bottom: 5px;
+
+  padding: 5px 5px 5px 5px;
+  width: 100%;
+
+}
+
+
+#title{
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+input{
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+th {
+  text-align: left;
+}
+
+#button{
+  background-color: #F0F8FF  ;
+}
+
+footer{
+  position: absolute;
+  left: 5px;
+  top:0;
+}
+
+#shadow{
+font-family: 'Shadows Into Light', cursive;
+}
+
+#raleway{
+font-family: 'Raleway', sans-serif;
+}
+
+#sans{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+span{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}

@@ -1,4 +1,6 @@
 require 'rubygems'
+require 'capybara'
+include Capybara::DSL
 
 # All our specs should require 'spec_helper' (this file)
 
@@ -8,3 +10,18 @@ require 'rubygems'
 ENV['RACK_ENV'] ||= 'test'
 
 require File.expand_path("../../config/environment", __FILE__)
+
+require 'rspec'
+
+require 'capybara'
+
+RSpec.configure do |config|
+  config.include Capybara::DSL
+end
+
+Capybara.configure do |config|
+  config.run_server = false
+  config.current_driver = :selenium
+  config.app = "fake app name"
+  config.app_host = "http://localhost:9393/"
+end
